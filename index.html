@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>匿名掲示板</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>匿名掲示板</h1>
+
+    <form id="post">
+      <textarea name="text" id="content" placeholder="投稿内容を入力..." required></textarea>
+      <button type="submit">投稿する</button>
+    </form>
+
+    <div id="posts"></div>
+  </div>
+
+  <script>
+    //const postForm = document.getElementById('post');
+    //const postList = document.getElementById('posts');
+
+    /*postForm.addEventListener('submit', function (e) {
+      //e.preventDefault();
+      const content = document.getElementById('content').value.trim();
+      if (content === '') return;
+
+      const post = document.createElement('div');
+      post.className = 'post';
+      post.innerHTML = `
+        <p>${content}</p>
+        <button class="like-btn">❤️ いいね (<span class="like-count">0</span>)</button>
+      `;
+
+      post.querySelector('.like-btn').addEventListener('click', function () {
+        const countSpan = this.querySelector('.like-count');
+        countSpan.textContent = parseInt(countSpan.textContent) + 1;
+      });
+
+      postList.prepend(post);
+      //document.getElementById('content').value = '';
+    }); */
+  </script>
+</body>
+</html>
